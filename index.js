@@ -155,7 +155,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var leftNumbers = DODGER.style.left.replace('px', '')
+  var leftNumbers = DODGER.style.left
   var left = positionToInteger(leftNumbers)
   
   if (left > 0) {
