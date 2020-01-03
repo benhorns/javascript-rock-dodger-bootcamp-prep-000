@@ -84,14 +84,11 @@ function createRock(x) {
      * we should call endGame().
      */
      
-   if (checkCollision(rock)){
+  if (checkCollision(rock)){
      endGame()
    }
    
-     var leftNumbers = dodger.style.left.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
-  
-  if (left > 0) {
+  if (top > 0) {
     dodger.style.left = `{left - 4 px}`
   }
 
