@@ -87,6 +87,14 @@ function createRock(x) {
    if (checkCollision(rock)){
      endGame()
    }
+   
+     var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
+  
+  if (left > 0) {
+    dodger.style.left = `{left - 4 px}`
+  }
+
     
     /**
      * Otherwise, if the rock hasn't reached the bottom of
