@@ -88,7 +88,7 @@ function createRock(x) {
    }
    
   else if (top < 400) {
-            
+    
   }
 
     
