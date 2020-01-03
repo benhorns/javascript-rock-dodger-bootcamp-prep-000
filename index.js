@@ -91,7 +91,7 @@ function createRock(x) {
    }
    
   else if (rock > 0) {
-    rock= `{top - 4 px}`
+    rock.style.bottom = `{top - 4 px}`
   }
 
     
