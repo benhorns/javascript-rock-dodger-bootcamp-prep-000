@@ -173,8 +173,8 @@ function moveDodgerRight() {
   var leftNumbers = DODGER.style.left.replace('px', '')
   var left = positionToInteger(leftNumbers)
   
-  if (left  < 0){
-    DODGER.style.left = `{left + 4px}`
+  if (left  < 360){
+    DODGER.style.left = `${left+4}px`
   }
   // implement me!
   /**
