@@ -79,6 +79,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    rock.style.top =  2;
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -90,8 +91,8 @@ function createRock(x) {
      endGame()
    }
    
-  else if (bottom > 0) {
-    rock.style.bottom = `{top - 4 px}`
+  else if (top > 0) {
+    rock.style.bottom = `{top + 4 px}`
   }
 
     
