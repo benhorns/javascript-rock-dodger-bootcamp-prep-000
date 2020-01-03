@@ -63,8 +63,6 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = rock.style.top = 0;
 
-  rock.style.top = top
-
   GAME.appendChild(rock);
 
   /**
