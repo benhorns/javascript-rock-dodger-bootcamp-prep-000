@@ -88,7 +88,7 @@ function createRock(x) {
    }
    
   if (top < 400) {
-    window.requestAnimationFrame(moveRock
+    window.requestAnimationFrame(moveRock)
   }
 
     
