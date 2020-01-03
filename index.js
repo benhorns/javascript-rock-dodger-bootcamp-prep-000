@@ -89,7 +89,7 @@ function createRock(x) {
    }
    
   if (top > 0) {
-    dodger.style.left = `{left - 4 px}`
+    rock.style.top = `{top - 4 px}`
   }
 
     
