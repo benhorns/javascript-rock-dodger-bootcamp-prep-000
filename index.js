@@ -118,9 +118,9 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-   gameInterval = null;
-   ROCKS.splice(0,ROCKS.length);
-   GAME.removeEventListener(moveDodger);
+   clearInterval(gameInterval);
+   ROCKS.forEach(rock => rock.remove());
+   GAME.removeEventListener('keydown', moveDodger);
    alert ("YOU LOSE!")
 }
 
@@ -136,6 +136,7 @@ function moveDodger(e) {
      document.addEventListener('keydown', function (e) {
     if (e.which === LEFT_ARROW){
       moveDodgerLeft()
+      e.preventDefault();
     }
     if (e.which === RIGHT_ARROW){
       moveDodgerRight()
@@ -149,7 +150,7 @@ function moveDodgerLeft() {
   var left = paraseInt(leftNumbers, 10)
   
   if (left > 0) {
-    dodger.style.left = `{left - 1 px}`
+    dodger.style.left = `{left - 4 px}`
   }
 
   // implement me!
