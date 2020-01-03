@@ -87,8 +87,8 @@ function createRock(x) {
      endGame()
    }
    
-  else if (top > 0) {
-    rock.style.bottom = `{top + 4 px}`
+  else if (top < 400) {
+            
   }
 
     
