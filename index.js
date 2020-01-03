@@ -163,6 +163,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+  var rightNumbers = 
   // implement me!
   /**
    * This function should move DODGER to the right
