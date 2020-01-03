@@ -90,7 +90,9 @@ function createRock(x) {
   if (top < 400) {
     window.requestAnimationFrame(moveRock)
   }
-
+  else{
+    
+  }
     
     /**
      * Otherwise, if the rock hasn't reached the bottom of
