@@ -141,7 +141,7 @@ function moveDodger(e) {
       moveDodgerRight()
     }
     else {
-      
+      return null;
     }
    
 }
