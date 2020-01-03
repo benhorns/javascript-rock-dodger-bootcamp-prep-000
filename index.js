@@ -62,7 +62,7 @@ function createRock(x) {
 
   // Hmmm, why would we have used `var` here?
   var top = 0
-  var right = 
+  var bottom = 380; 
 
   rock.style.top = top
   
