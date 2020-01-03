@@ -65,6 +65,7 @@ function createRock(x) {
   var bottom = 380; 
 
   rock.style.top = top
+  rock.style.bottom = bottom
   
   GAME.appendChild(rock);
 
@@ -89,8 +90,8 @@ function createRock(x) {
      endGame()
    }
    
-  else if (top > 0) {
-    rock.style.top = `{top - 4 px}`
+  else if (bottom > 0) {
+    rock.style.bottom = `{top - 4 px}`
   }
 
     
